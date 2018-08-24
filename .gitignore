@@ -1,3 +1,4 @@
 # Ignore locally-generated Jekyll files
 _site
 .jekyll-metadata
+Gemfile.lock
