@@ -2,8 +2,8 @@ theme: jekyll-theme-slate
 incremental: true
 livereload: true
 strict_front_matter: true
-github-metadata:
-  repository: cavatron/reach
+repository: cavatron/reach
 plugins:
-  - jemoji
-  
+ - jekyll-avatar
+ - jemoji
+title: Reach

@@ -1,14 +1,13 @@
 ---
+layout: default
 title: Welcome
 ---
-
-# FAQs
 
 ### What is Reach?
 
 Reach is a project designed to assist students enrolled in [SBU's]() Applied Software Engineering courses. As software applications become more catered to Web and mobile to accommodate user needs, creating a business-level application becomes increasingly advanced, typically faster than academic instutions can integrate into their coursework. This creates an intense learning curve for those who have never created a business-level application, where concepts learned in the classroom are applied in a hybrid academic and industry setting.
 
-The solution is Reach, a way to **bridge the gap between industry and academia** by providing resources on *how* to create a full-scale web or mobile application. Anyone can read documentation or books or watch videos, but if students are not told how and why different technologies work together, they will be overwhelmed.
+The solution is Reach, a way to **bridge the gap between industry and academia** by providing resources on *how* to create a full-scale web or mobile application. Anyone can read documentation or books or watch videos, but if students are not told how and why different technologies work together, they may be overwhelmed.
 
 ### How does it work?
 
