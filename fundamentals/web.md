@@ -80,17 +80,17 @@ Okay, you get it. JavaScript must be amazing. The user and developer experience 
 
 EMCAScript is the standard upon JavaScript (and other languages) are built. It is not a programming language. JavaScript is just one (albeit, the most popular) implementation of the EMCAScript standard. Because JavaScript has flaws like everything else, it often gets improved. When a new EMCAScript standard is released, JavaScript gets an update, and browsers get an update supporting new JavaScript features.
 
-However, these changes are not immediate. 
+However, these changes are not immediate. It takes time for JavaScript to adopt a new language feature, time for browsers to support that feature, and even more time for websites to use that new feature (if it becomes necessary or useful). This creates a problem for developers. That means they need adjust their programming based on which browsers (and the version of those browsers) the users use, which is almost impossible to predict. To get the full use out of the language, one would have to closely follow the ECMAScript standard and manually check which versions of which browsers support which features. This becomes a complicated mess. What if a developer could always use the latest features of JavaScript without having to worry about browser compatibility?
 
 #### Babel
 
+Babel is the solution to the problem described in the previous paragraph. It allows developers to use the latest JavaScript features, then translates it into JavaScript that browsers support. Rather than waiting around for updates to Google Chrome, Firefox, etc., a developer can always use the latest and greatest features, which often speeds up development time and makes the code easier to read and understand.
+
+You can read more about Babel [here](https://babeljs.io/).
+
 ## Developer Tools
 
-### Breakpoints
 
-### Chrome
-
-### Firefox
 
 ## Node.js
 
