@@ -68,7 +68,7 @@ CSS preprocessors are languages that add new features and simplicity to CSS and,
 
 Three of the most popular CSS preprocessors are [Sass](https://sass-lang.com/), [Less](http://lesscss.org/), and [Stylus](http://stylus-lang.com/).
 
-## JavaScript and Web Browsers
+## JavaScript
 
 JavaScript is the language behind the functionality of web pages. When you click a button on a modern website, or do almost any action (even just loading the page), JavaScript was likely involved. This is why according to the [Stack Overflow Developer Survey 2018](https://insights.stackoverflow.com/survey/2018/#most-popular-technologies), JavaScript is the most popular language in the world. In the effort to simplify application development, JavaScript is finding its way into other parts of computing, not just web pages. (See [Node.js](#node-js)).
 
@@ -82,15 +82,21 @@ EMCAScript is the standard upon JavaScript (and other languages) are built. It i
 
 However, these changes are not immediate. It takes time for JavaScript to adopt a new language feature, time for browsers to support that feature, and even more time for websites to use that new feature (if it becomes necessary or useful). This creates a problem for developers. That means they need adjust their programming based on which browsers (and the version of those browsers) the users use, which is almost impossible to predict. To get the full use out of the language, one would have to closely follow the ECMAScript standard and manually check which versions of which browsers support which features. This becomes a complicated mess. What if a developer could always use the latest features of JavaScript without having to worry about browser compatibility?
 
-#### Babel
+### Babel
 
 Babel is the solution to the problem described in the previous paragraph. It allows developers to use the latest JavaScript features, then translates it into JavaScript that browsers support. Rather than waiting around for updates to Google Chrome, Firefox, etc., a developer can always use the latest and greatest features, which often speeds up development time and makes the code easier to read and understand.
 
 You can read more about Babel [here](https://babeljs.io/).
 
-## Developer Tools
+## Browser Developer Tools
 
+Every modern browser has built-in tools for developers. You may have right-clicked on a web page and clicked "Inspect Element". This is one of the ways to open developer tools for your browser.
 
+What can you do with developer tools? Some of the details are different between browsers, but here is a general overview. With these tools, you can see the HTML, CSS and JavaScript for a page. You can view console output, all of the assets loaded by the page (images, etc.), and network requests (which are very useful when communicating with an API in the cloud). You can see statistics on the performance of your application (how much memory it uses, how long things take to load, etc.). Best of all, you can debug applications. You are able to set breakpoints and step through your code line by line so that you can see what is changing and when.
+
+If you have never debugged an application on any IDE with any language, you may want to read about debugging for [Chrome](https://developers.google.com/web/tools/chrome-devtools/) or [Firefox](https://developer.mozilla.org/en-US/docs/Tools). Debugging in one language is pretty much the same concept for all. If you have debugged before, you may still want to view that article to know exactly how it works for web apps.
+
+Both Chrome and Firefox have great developer tools. I recommend using either one, as they are pretty much the same.
 
 ## Node.js
 
