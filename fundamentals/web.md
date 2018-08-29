@@ -142,83 +142,11 @@ Use whichever one you prefer. Try both and figure out which one you prefer. It m
 
 ### Vue
 
-## Back End Frameworks
-
-### Express
-
-### Spring
-
-### ASP.NET
-
-### Ruby on Rails
-
-### Flask
-
-### Golang
-
-## Webpack
-
-### Bundling
-
-### Minification
-
-## Linting/Formatting
-
-### ESLint
-
-### Prettier
-
 ## Git
-
-## Continuous Integration and Continuous Deployment (CI/CD)
 
 ## Markdown
 
-## Progress Web Apps (PWA)
-
-## Application Programming Interface (API)
-
-## Databases
-
-### SQL Databases
-
-#### MySQL/MariaDB
-
-#### SQLServer
-
-#### PostgreSQL
-
-### NoSQL Databases
-
-#### MongoDB
-
-#### CouchDB
-
-#### Neo4j
-
-### Cloud functions/Serverless apps
-
-## Authentication and Authorization
-
-## Third Party Services
-
-### Auth0
-
-### Stripe
-
-### TravisCI
-
 ## Networking
-
-## Browser behavior
-
-### Local Storage
-
-### Cookies
-
-## Security
-
-## Static and dynamic content
 
 ## Protocols
 
@@ -232,26 +160,12 @@ Use whichever one you prefer. Try both and figure out which one you prefer. It m
 
 ### SFTP
 
-## Certificate Authorities (CA)
-
 ## Domains
 
 ## URLs/URIs
-
-## Document Object Model (DOM)
 
 ## SPA
 
 ## Routing
 
 ## Component Libraries
-
-## Don't reinvent the wheel
-
-## State management
-
-## REST and GraphQL
-
-## Deployment
-
-## Websites and Web applications
