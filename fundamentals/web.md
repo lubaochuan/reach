@@ -148,21 +148,11 @@ Markdown is a language to create great-looking content quickly. README files on 
 
 You need to have a solid understanding of computer networks and how the Internet works. This is includes knowing about clients, servers, and APIs --- what they are in the context of the Web and how they all communicate.
 
-## Protocols
+## Protocols, Domains, URLs/URIs
 
-### HTTP
+It is useful or necessary to understand the following protocols: HTTP, HTTPS, SSH, FTP, SFTP. You will need to understand how domains work, what they are for, and how they are managed. You will also need to know what a URL is, how it is structured, and how you use them to access Web resources, especially programmatically.
 
-### HTTPS
-
-### SSH
-
-### FTP
-
-### SFTP
-
-## Domains
-
-## URLs/URIs
+[Here](https://www.techwalla.com/articles/what-is-web-protocol) is a decent resource to get you started.
 
 ## SPA
 
