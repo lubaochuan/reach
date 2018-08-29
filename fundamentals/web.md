@@ -146,6 +146,8 @@ Markdown is a language to create great-looking content quickly. README files on 
 
 ## Networking
 
+You need to have a solid understanding of computer networks and how the Internet works. This is includes knowing about clients, servers, and APIs --- what they are in the context of the Web and how they all communicate.
+
 ## Protocols
 
 ### HTTP
