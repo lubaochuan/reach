@@ -31,7 +31,7 @@ Not all tasks are suited for command line either. Once you have mastered CLI, it
 
 One thing you need to understand and appreciate about web development and software development in general is the beauty and superiority of open source software. You've heard the saying "Don't reinvent the wheel." That is one of the underlying principles of open source, which coincides with the popular DRY (Don't Repeat Yourself) software development mindset.
 
-So, in the effort to keep things DRY and not reinvent the wheel, open source software is produced. This means for you as a developer that if there is a problem you need solved for your specific language or platform, it may have already been solved and provided as a library for you to use in your code.
+So, in the effort to keep things DRY and not reinvent the wheel, open source software is produced. This means for you as a developer that if there is a problem you need solved for your specific language or platform, it may have already been solved and provided as a library for you to use in your code. Often, this means that there are multiple libraries that perform the same basic functionality, with some differences in the details. It is up to you to explore different ones that have become popular, are easy for you to use, and/or better fit your project needs. There are always blog posts that recommend different libraries. I tend to go along with what the majority of the web development community is using or recommending.
 
 See the section on [Package Management](#package-management) where I explain how open source works for web applications.
 
@@ -112,27 +112,24 @@ There is a project similar to npm called [Yarn](https://yarnpkg.com/en/). Yarn i
 
 Use whichever one you prefer. Try both and figure out which one you prefer. It may be beneficial to start with using npm, for it is still the most widely used.
 
-## Unit Tests
+## Testing
 
-### Jest
+Testing is an integral part of any software application. When you write tests, you are creating a foundation for your application's expected functionality.
 
-### Karma + Jasmine
+Further explanation of testing:
 
-### Mocha + Chai
+- [JavaScript Testing: Unit vs Functional vs Integration Tests](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
+- [JavaScript Unit Testing for Beginners](https://designmodo.com/test-javascript-unit/)
 
-## Integration Tests
+There are several different testing frameworks. Experiment with them and find the one you like best, or you can find comparisons [here](https://raygun.com/blog/javascript-unit-testing-frameworks/) and [here](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3).
 
-## End to End (E2E) Testing
+## Git
 
-### Cypress
-
-### Nightwatch
+[Git](https://git-scm.com/) is the current standard source control program because it is far superior than previous ones, both in speed and ease of use. You probably have already been introduced to Git. I encourage you to become more comfortable with branching/merging and using the CLI. Explore different git workflows that developer communities are using and find one that works best with your team and your project.
 
 ## Text Editors
 
-### Visual Studio Code
-
-### Atom
+A developer is much more productive with the right tools. This includes what you use to write your code. The two most popular text editors for web developers are [Visual Studio Code](https://code.visualstudio.com/) (often called VSCode) and [Atom](https://atom.io/). Though, at the core, they are just text editors, they become the most useful with the help of extensions. With extensions, both can reach or even surpass the functionality of standard IDEs like Visual Studio or Eclipse. Because their UIs are cleaner and simpler than an IDE like Visual Studio, they encourage more use of the command line, which provides a great opportunity to better your CLI skills. You may be surprised with how many programming languages they support, and, as a result, I use them for all of my programming, not just web development.
 
 ## Front End Frameworks
 
@@ -142,7 +139,7 @@ Use whichever one you prefer. Try both and figure out which one you prefer. It m
 
 ### Vue
 
-## Git
+
 
 ## Markdown
 
