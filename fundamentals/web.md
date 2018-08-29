@@ -80,7 +80,7 @@ Okay, you get it. JavaScript must be amazing. The user and developer experience 
 
 EMCAScript is the standard upon JavaScript (and other languages) are built. It is not a programming language. JavaScript is just one (albeit, the most popular) implementation of the EMCAScript standard. Because JavaScript has flaws like everything else, it often gets improved. When a new EMCAScript standard is released, JavaScript gets an update, and browsers get an update supporting new JavaScript features.
 
-However, these changes are not immediate. It takes time for JavaScript to adopt a new language feature, time for browsers to support that feature, and even more time for websites to use that new feature (if it becomes necessary or useful). This creates a problem for developers. That means they need adjust their programming based on which browsers (and the version of those browsers) the users use, which is almost impossible to predict. To get the full use out of the language, one would have to closely follow the ECMAScript standard and manually check which versions of which browsers support which features. This becomes a complicated mess. What if a developer could always use the latest features of JavaScript without having to worry about browser compatibility?
+However, these changes are not immediate. It takes time for JavaScript to adopt a new language feature, time for browsers to support that feature, and even more time for websites to use that new feature (if it becomes necessary or useful). This creates a problem for developers. That means they need adjust their programming based on which browsers (and the version of those browsers) the users use. For example, a developer can use [Can I Use?](https://caniuse.com/usage-table) to get an idea of what versions of browsers users are using, though this creates a lot of extra work. What if a developer could always use the latest features of JavaScript without having to worry about browser compatibility?
 
 ### Babel
 
@@ -92,7 +92,7 @@ You can read more about Babel [here](https://babeljs.io/).
 
 Every modern browser has built-in tools for developers. You may have right-clicked on a web page and clicked "Inspect Element". This is one of the ways to open developer tools for your browser.
 
-What can you do with developer tools? Some of the details are different between browsers, but here is a general overview. With these tools, you can see the HTML, CSS and JavaScript for a page. You can view console output, all of the assets loaded by the page (images, etc.), and network requests (which are very useful when communicating with an API in the cloud). You can see statistics on the performance of your application (how much memory it uses, how long things take to load, etc.). Best of all, you can debug applications. You are able to set breakpoints and step through your code line by line so that you can see what is changing and when.
+What can you do with developer tools? Some of the details are different between browsers, but here is a general overview. With these tools, you can see the HTML, CSS and JavaScript for a page. You can view console output, all of the assets loaded by the page (images, etc.), and network requests (which are very useful when communicating with an API in the cloud). You can see statistics on the performance of your application (how much memory it uses, how long things take to load, etc.). Best of all, you can debug applications. You are able to set breakpoints and step through your code line by line so that you can see what values are changing and when.
 
 If you have never debugged an application on any IDE with any language, you may want to read about debugging for [Chrome](https://developers.google.com/web/tools/chrome-devtools/) or [Firefox](https://developer.mozilla.org/en-US/docs/Tools). Debugging in one language is pretty much the same concept for all. If you have debugged before, you may still want to view that article to know exactly how it works for web apps.
 
@@ -100,7 +100,11 @@ Both Chrome and Firefox have great developer tools. I recommend using either one
 
 ## Node.js
 
+Originally, JavaScript was a client-side language only understood by browsers. [Node.js](https://nodejs.org/en/about/) is an engine that expands the usage of JavaScript outside of performing actions on web pages. With Node, devs can use JavaScript to access lower-level functionality of a machine, such as networking. This makes Node very popular for creating servers and building APIs. It is now possible to create a full stack web application (server-side and client-side) with a single language, JavaScript. Node.js has been rapidly overtaking other things used for server-side applications such as [PHP](https://secure.php.net/), because of its speed and ease of use.
+
 ## Package Management
+
+
 
 ### NPM
 
