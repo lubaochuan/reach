@@ -104,11 +104,13 @@ Originally, JavaScript was a client-side language only understood by browsers. [
 
 ## Package Management
 
+Remember the section on the benefits of open source software? A topic that is closely tied to open source is package management. If developers create software for free, where is it all going to go? You may end up using tens or hundreds of different open source packages in a single project. Can you imagine going to a website for each one, clicking the download link, and adding it to an appropriate place in your project? Not only would that take a large amount of time, there would be inconsistency of how these packages are added to different projects. What if the package got an update? Does it make sense to go back to the website and download the latest version? Probably not. All of this could benefit from automation, and that is exactly the purpose of package management. A package manager is a tool with some interface that allows for the downloading, updating, and installation of packages. All of the packages are stored in some uniform place (called a repository) where every developer can go to find them, or, even better, every developer can use the same tool that gets packages from the same place. Because Unix-like OS's are built on open source software, they come with package managers for this purpose. On Debian-based Linux distributions, the popular package manager is [apt](https://wiki.debian.org/Apt). Arch Linux comes with [pacman](https://wiki.archlinux.org/index.php/Pacman). Java developers may use [Apache Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/). Python devs use [pip](https://pypi.org/project/pip/)...
 
+You get the idea. How about JavaScript? Node.js ships with a package manager called [npm](https://www.npmjs.com/), or Node Package Manager. To create web applications, you need to know how to use this tool, as this is how you will manage dependencies for your project. Any JavaScript library you may need can be found on npm's website. You can even do a manual search to find packages that fit your project needs.
 
-### NPM
+There is a project similar to npm called [Yarn](https://yarnpkg.com/en/). Yarn is a package manager for JavaScript, just like npm. However, many developers prefer Yarn, because it often performs much faster than npm.
 
-### Yarn
+Use whichever one you prefer. Try both and figure out which one you prefer. It may be beneficial to start with using npm, for it is still the most widely used.
 
 ## Unit Tests
 
