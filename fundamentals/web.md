@@ -131,6 +131,10 @@ There are several different testing frameworks. Experiment with them and find th
 
 A developer is much more productive with the right tools. This includes what you use to write your code. The two most popular text editors for web developers are [Visual Studio Code](https://code.visualstudio.com/) (often called VSCode) and [Atom](https://atom.io/). Though, at the core, they are just text editors, they become the most useful with the help of extensions. With extensions, both can reach or even surpass the functionality of standard IDEs like Visual Studio or Eclipse. Because their UIs are cleaner and simpler than an IDE like Visual Studio, they encourage more use of the command line, which provides a great opportunity to better your CLI skills. You may be surprised with how many programming languages they support, and, as a result, I use them for all of my programming, not just web development.
 
+## Markdown
+
+Markdown is a language to create great-looking content quickly. README files on GitHub and this page you are currently reading are all written in Markdown. It has a simple syntax and is great for writing documentation. It is a good skill to have. You can read more about it [here](https://daringfireball.net/projects/markdown/).
+
 ## Front End Frameworks
 
 ### React
@@ -139,9 +143,6 @@ A developer is much more productive with the right tools. This includes what you
 
 ### Vue
 
-
-
-## Markdown
 
 ## Networking
 
