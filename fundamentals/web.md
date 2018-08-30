@@ -137,12 +137,13 @@ Markdown is a language to create great-looking content quickly. README files on 
 
 ## Front End Frameworks
 
-### React
+Before I discuss front end frameworks, I need to give a brief overview of how the Web has changed in the last few years. Web pages used to be generated 100% on the server side, via a server-side language or template engine, such as PHP. This works, however, this means that every user action on a page needs to involve the server, so that the page can be regenerated for the user. When navigating to another page (e.g. navigating from `/` to `/about`), the client would have to download an entirely different page from the server. This, in many cases, is inefficient and provides a poor user experience. You may notice now that with many websites, navigation does not cause a page reload --- it just happens more naturally. This is because of the concept of a Single Page Application (SPA) that is behind modern web applications. A SPA uses client-side routing to simulate page navigation, without reloading the web page. SPAs work because of JavaScript. You may also have noticed that certain websites allow you to save information, for example, after entering information into a form, without reloading the page. This is because JavaScript libraries built on Node.js allow applications to communicate with the server without a page reload. The underlying technology of this is called [XMLHttpRequest (XHR)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). The ability for the client-side to do this is not built into the JavaScript language itself, which is why the web development community actively develops front end frameworks to help with this sort of thing. 
 
-### Angular
+The technology I discussed above is complex. The point of front end frameworks is to provide a platform to help ease this complexity, as well as provide other features. The main feature I have left out thus far is the ability to create custom HTML elements, commonly called components, that allow for great code reuse when building user interfaces.
 
-### Vue
+The top three front end frameworks used today are Facebook's [React](https://reactjs.org/), Google's [Angular](https://angular.io/), and my personal favorite [Vue](). All three share the features I described earlier, with syntax differences among other things. There is no *correct* framework to use. It's really up to the team of developers. Having used all three, I have begun to prefer [Vue](https://vuejs.org/). Just starting out with web development, however, it doesn't matter which one you choose.
 
+Side note: there is a great difference between [Angular](https://angular.io/) and [AngularJS](https://angularjs.org/). Since first creating AngularJS, Google developers and the rest of that developer community have completely rewritten it, dropping the "JS" and calling it Angular (though it is still JavaScript). There are extreme differences in syntax and usage between the two. If you decide to create your application using Angular, use the latest version (Angular 6) and *not* AngularJS, for AngularJS is the first version. Long term, AngularJS will likely cease to exist, after enough time has been given to allow companies to migrate to the latest Angular version.
 
 ## Networking
 
@@ -153,9 +154,3 @@ You need to have a solid understanding of computer networks and how the Internet
 It is useful or necessary to understand the following protocols: HTTP, HTTPS, SSH, FTP, SFTP. You will need to understand how domains work, what they are for, and how they are managed. You will also need to know what a URL is, how it is structured, and how you use them to access Web resources, especially programmatically.
 
 [Here](https://www.techwalla.com/articles/what-is-web-protocol) is a decent resource to get you started.
-
-## SPA
-
-## Routing
-
-## Component Libraries
