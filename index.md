@@ -11,7 +11,7 @@ The solution is Reach, a way to **bridge the gap between industry and academia**
 
 ### How does it work?
 
-Reach is made up of a FAQ (Frequently Asked Questions), a blog, and a space for links to web and mobile development resources. The combination of these is being actively developed to give students more context about the semantics of web and mobile development. Students will be able to find references to best practices, frequently used tools and technologies, and solutions to common problems.
+Reach is currently made up of web application development resources. The resources are designed to give students more context about the semantics of web development. Students will be able to find references to best practices, frequently used tools and technologies, and solutions to common problems.
 
 ### Who creates Reach content?
 
