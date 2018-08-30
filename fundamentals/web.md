@@ -31,7 +31,7 @@ Not all tasks are suited for command line either. Once you have mastered CLI, it
 
 One thing you need to understand and appreciate about web development and software development in general is the beauty and superiority of open source software. You've heard the saying "Don't reinvent the wheel." That is one of the underlying principles of open source, which coincides with the popular DRY (Don't Repeat Yourself) software development mindset.
 
-So, in the effort to keep things DRY and not reinvent the wheel, open source software is produced. This means for you as a developer that if there is a problem you need solved for your specific language or platform, it may have already been solved and provided as a library for you to use in your code.
+So, in the effort to keep things DRY and not reinvent the wheel, open source software is produced. This means for you as a developer that if there is a problem you need solved for your specific language or platform, it may have already been solved and provided as a library for you to use in your code. Often, this means that there are multiple libraries that perform the same basic functionality, with some differences in the details. It is up to you to explore different ones that have become popular, are easy for you to use, and/or better fit your project needs. There are always blog posts that recommend different libraries. I tend to go along with what the majority of the web development community is using or recommending.
 
 See the section on [Package Management](#package-management) where I explain how open source works for web applications.
 
@@ -68,7 +68,7 @@ CSS preprocessors are languages that add new features and simplicity to CSS and,
 
 Three of the most popular CSS preprocessors are [Sass](https://sass-lang.com/), [Less](http://lesscss.org/), and [Stylus](http://stylus-lang.com/).
 
-## JavaScript and Web Browsers
+## JavaScript
 
 JavaScript is the language behind the functionality of web pages. When you click a button on a modern website, or do almost any action (even just loading the page), JavaScript was likely involved. This is why according to the [Stack Overflow Developer Survey 2018](https://insights.stackoverflow.com/survey/2018/#most-popular-technologies), JavaScript is the most popular language in the world. In the effort to simplify application development, JavaScript is finding its way into other parts of computing, not just web pages. (See [Node.js](#node-js)).
 
@@ -80,166 +80,77 @@ Okay, you get it. JavaScript must be amazing. The user and developer experience 
 
 EMCAScript is the standard upon JavaScript (and other languages) are built. It is not a programming language. JavaScript is just one (albeit, the most popular) implementation of the EMCAScript standard. Because JavaScript has flaws like everything else, it often gets improved. When a new EMCAScript standard is released, JavaScript gets an update, and browsers get an update supporting new JavaScript features.
 
-However, these changes are not immediate. 
+However, these changes are not immediate. It takes time for JavaScript to adopt a new language feature, time for browsers to support that feature, and even more time for websites to use that new feature (if it becomes necessary or useful). This creates a problem for developers. That means they need adjust their programming based on which browsers (and the version of those browsers) the users use. For example, a developer can use [Can I Use?](https://caniuse.com/usage-table) to get an idea of what versions of browsers users are using, though this creates a lot of extra work. What if a developer could always use the latest features of JavaScript without having to worry about browser compatibility?
 
-#### Babel
+### Babel
 
-## Developer Tools
+Babel is the solution to the problem described in the previous paragraph. It allows developers to use the latest JavaScript features, then translates it into JavaScript that browsers support. Rather than waiting around for updates to Google Chrome, Firefox, etc., a developer can always use the latest and greatest features, which often speeds up development time and makes the code easier to read and understand.
 
-### Breakpoints
+You can read more about Babel [here](https://babeljs.io/).
 
-### Chrome
+## Browser Developer Tools
 
-### Firefox
+Every modern browser has built-in tools for developers. You may have right-clicked on a web page and clicked "Inspect Element". This is one of the ways to open developer tools for your browser.
+
+What can you do with developer tools? Some of the details are different between browsers, but here is a general overview. With these tools, you can see the HTML, CSS and JavaScript for a page. You can view console output, all of the assets loaded by the page (images, etc.), and network requests (which are very useful when communicating with an API in the cloud). You can see statistics on the performance of your application (how much memory it uses, how long things take to load, etc.). Best of all, you can debug applications. You are able to set breakpoints and step through your code line by line so that you can see what values are changing and when.
+
+If you have never debugged an application on any IDE with any language, you may want to read about debugging for [Chrome](https://developers.google.com/web/tools/chrome-devtools/) or [Firefox](https://developer.mozilla.org/en-US/docs/Tools). Debugging in one language is pretty much the same concept for all. If you have debugged before, you may still want to view that article to know exactly how it works for web apps.
+
+Both Chrome and Firefox have great developer tools. I recommend using either one, as they are pretty much the same.
 
 ## Node.js
 
+Originally, JavaScript was a client-side language only understood by browsers. [Node.js](https://nodejs.org/en/about/) is an engine that expands the usage of JavaScript outside of performing actions on web pages. With Node, devs can use JavaScript to access lower-level functionality of a machine, such as networking. This makes Node very popular for creating servers and building APIs. It is now possible to create a full stack web application (server-side and client-side) with a single language, JavaScript. Node.js has been rapidly overtaking other things used for server-side applications such as [PHP](https://secure.php.net/), because of its speed and ease of use.
+
 ## Package Management
 
-### NPM
+Remember the section on the benefits of open source software? A topic that is closely tied to open source is package management. If developers create software for free, where is it all going to go? You may end up using tens or hundreds of different open source packages in a single project. Can you imagine going to a website for each one, clicking the download link, and adding it to an appropriate place in your project? Not only would that take a large amount of time, there would be inconsistency of how these packages are added to different projects. What if the package got an update? Does it make sense to go back to the website and download the latest version? Probably not. All of this could benefit from automation, and that is exactly the purpose of package management. A package manager is a tool with some interface that allows for the downloading, updating, and installation of packages. All of the packages are stored in some uniform place (called a repository) where every developer can go to find them, or, even better, every developer can use the same tool that gets packages from the same place. Because Unix-like OS's are built on open source software, they come with package managers for this purpose. On Debian-based Linux distributions, the popular package manager is [apt](https://wiki.debian.org/Apt). Arch Linux comes with [pacman](https://wiki.archlinux.org/index.php/Pacman). Java developers may use [Apache Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/). Python devs use [pip](https://pypi.org/project/pip/)...
 
-### Yarn
+You get the idea. How about JavaScript? Node.js ships with a package manager called [npm](https://www.npmjs.com/), or Node Package Manager. To create web applications, you need to know how to use this tool, as this is how you will manage dependencies for your project. Any JavaScript library you may need can be found on npm's website. You can even do a manual search to find packages that fit your project needs.
 
-## Unit Tests
+There is a project similar to npm called [Yarn](https://yarnpkg.com/en/). Yarn is a package manager for JavaScript, just like npm. However, many developers prefer Yarn, because it often performs much faster than npm.
 
-### Jest
+Use whichever one you prefer. Try both and figure out which one you prefer. It may be beneficial to start with using npm, for it is still the most widely used.
 
-### Karma + Jasmine
+## Testing
 
-### Mocha + Chai
+Testing is an integral part of any software application. When you write tests, you are creating a foundation for your application's expected functionality.
 
-## Integration Tests
+Further explanation of testing:
 
-## End to End (E2E) Testing
+- [JavaScript Testing: Unit vs Functional vs Integration Tests](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
+- [JavaScript Unit Testing for Beginners](https://designmodo.com/test-javascript-unit/)
 
-### Cypress
-
-### Nightwatch
-
-## Text Editors
-
-### Visual Studio Code
-
-### Atom
-
-## Front End Frameworks
-
-### React
-
-### Angular
-
-### Vue
-
-## Back End Frameworks
-
-### Express
-
-### Spring
-
-### ASP.NET
-
-### Ruby on Rails
-
-### Flask
-
-### Golang
-
-## Webpack
-
-### Bundling
-
-### Minification
-
-## Linting/Formatting
-
-### ESLint
-
-### Prettier
+There are several different testing frameworks. Experiment with them and find the one you like best, or you can find comparisons [here](https://raygun.com/blog/javascript-unit-testing-frameworks/) and [here](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3).
 
 ## Git
 
-## Continuous Integration and Continuous Deployment (CI/CD)
+[Git](https://git-scm.com/) is the current standard source control program because it is far superior than previous ones, both in speed and ease of use. You probably have already been introduced to Git. I encourage you to become more comfortable with branching/merging and using the CLI. Explore different git workflows that developer communities are using and find one that works best with your team and your project.
+
+## Text Editors
+
+A developer is much more productive with the right tools. This includes what you use to write your code. The two most popular text editors for web developers are [Visual Studio Code](https://code.visualstudio.com/) (often called VSCode) and [Atom](https://atom.io/). Though, at the core, they are just text editors, they become the most useful with the help of extensions. With extensions, both can reach or even surpass the functionality of standard IDEs like Visual Studio or Eclipse. Because their UIs are cleaner and simpler than an IDE like Visual Studio, they encourage more use of the command line, which provides a great opportunity to better your CLI skills. You may be surprised with how many programming languages they support, and, as a result, I use them for all of my programming, not just web development.
 
 ## Markdown
 
-## Progress Web Apps (PWA)
+Markdown is a language to create great-looking content quickly. README files on GitHub and this page you are currently reading are all written in Markdown. It has a simple syntax and is great for writing documentation. It is a good skill to have. You can read more about it [here](https://daringfireball.net/projects/markdown/).
 
-## Application Programming Interface (API)
+## Front End Frameworks
 
-## Databases
+Before I discuss front end frameworks, I need to give a brief overview of how the Web has changed in the last few years. Web pages used to be generated 100% on the server side, via a server-side language or template engine, such as PHP. This works, however, this means that every user action on a page needs to involve the server, so that the page can be regenerated for the user. When navigating to another page (e.g. navigating from `/` to `/about`), the client would have to download an entirely different page from the server. This, in many cases, is inefficient and provides a poor user experience. You may notice now that with many websites, navigation does not cause a page reload --- it just happens more naturally. This is because of the concept of a Single Page Application (SPA) that is behind modern web applications. A SPA uses client-side routing to simulate page navigation, without reloading the web page. SPAs work because of JavaScript. You may also have noticed that certain websites allow you to save information, for example, after entering information into a form, without reloading the page. This is because JavaScript libraries built on Node.js allow applications to communicate with the server without a page reload. The underlying technology of this is called [XMLHttpRequest (XHR)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). The ability for the client-side to do this is not built into the JavaScript language itself, which is why the web development community actively develops front end frameworks to help with this sort of thing. 
 
-### SQL Databases
+The technology I discussed above is complex. The point of front end frameworks is to provide a platform to help ease this complexity, as well as provide other features. The main feature I have left out thus far is the ability to create custom HTML elements, commonly called components, that allow for great code reuse when building user interfaces.
 
-#### MySQL/MariaDB
+The top three front end frameworks used today are Facebook's [React](https://reactjs.org/), Google's [Angular](https://angular.io/), and my personal favorite [Vue](). All three share the features I described earlier, with syntax differences among other things. There is no *correct* framework to use. It's really up to the team of developers. Having used all three, I have begun to prefer [Vue](https://vuejs.org/). Just starting out with web development, however, it doesn't matter which one you choose.
 
-#### SQLServer
-
-#### PostgreSQL
-
-### NoSQL Databases
-
-#### MongoDB
-
-#### CouchDB
-
-#### Neo4j
-
-### Cloud functions/Serverless apps
-
-## Authentication and Authorization
-
-## Third Party Services
-
-### Auth0
-
-### Stripe
-
-### TravisCI
+Side note: there is a great difference between [Angular](https://angular.io/) and [AngularJS](https://angularjs.org/). Since first creating AngularJS, Google developers and the rest of that developer community have completely rewritten it, dropping the "JS" and calling it Angular (though it is still JavaScript). There are extreme differences in syntax and usage between the two. If you decide to create your application using Angular, use the latest version (Angular 6) and *not* AngularJS, for AngularJS is the first version. Long term, AngularJS will likely cease to exist, after enough time has been given to allow companies to migrate to the latest Angular version.
 
 ## Networking
 
-## Browser behavior
+You need to have a solid understanding of computer networks and how the Internet works. This is includes knowing about clients, servers, and APIs --- what they are in the context of the Web and how they all communicate.
 
-### Local Storage
+## Protocols, Domains, URLs/URIs
 
-### Cookies
+It is useful or necessary to understand the following protocols: HTTP, HTTPS, SSH, FTP, SFTP. You will need to understand how domains work, what they are for, and how they are managed. You will also need to know what a URL is, how it is structured, and how you use them to access Web resources, especially programmatically.
 
-## Security
-
-## Static and dynamic content
-
-## Protocols
-
-### HTTP
-
-### HTTPS
-
-### SSH
-
-### FTP
-
-### SFTP
-
-## Certificate Authorities (CA)
-
-## Domains
-
-## URLs/URIs
-
-## Document Object Model (DOM)
-
-## SPA
-
-## Routing
-
-## Component Libraries
-
-## Don't reinvent the wheel
-
-## State management
-
-## REST and GraphQL
-
-## Deployment
-
-## Websites and Web applications
+[Here](https://www.techwalla.com/articles/what-is-web-protocol) is a decent resource to get you started.
